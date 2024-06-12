@@ -306,10 +306,81 @@ textarea {
     color: #02B1F4;
 }
 
+/* Estilos para el ícono del carrito */
+.cart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 
-    @media (max-width: 991px){
-    .menu{
-        padding: 20px;
+.cart i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cart-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px; /* Ajusta el ancho según sea necesario */
+    max-width: 80%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.cart-modal-content {
+    text-align: center;
+}
+
+.cart-modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #aaa;
+}
+
+.cart-modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cart-modal-content #cartItems {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.cart-modal-content button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.cart-modal-content button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+@media (max-width: 991px){
+ .menu{
+    padding: 20px;
     }
 
     .menu lable{
@@ -421,3 +492,12 @@ textarea {
 
 
 }
+
+
+
+
+
+
+
+
+

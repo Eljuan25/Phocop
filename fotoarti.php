@@ -46,6 +46,12 @@
             <img src="img/logos.webp" class="menu-icono" alt="This a menu">
             <i class="fas fa-bars"></i>
         </label>
+
+        
+        <div class="cart">
+            <i class="fas fa-shopping-cart" onclick="showCart()"></i>
+        </div>
+        
         <nav class="navbar">
             <ul>
                 <li><a href="index.php?section=inicio">Inicio</a></li>
@@ -55,6 +61,18 @@
             </ul>
         </nav>
     </div>
+
+    <div id="cartModal" class="cart-modal">
+            <div class="cart-modal-content">
+                <span class="close" onclick="closeCart()">&times;</span>
+                <h2>Carrito de Compras</h2>
+                <ul id="cartItems">
+                    <!-- Aquí se mostrarán los elementos del carrito -->
+                </ul>
+                <button onclick="checkout()">Checkout</button>
+            </div>
+        </div>
+
 </header>
 
 <?php

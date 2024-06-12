@@ -9,25 +9,44 @@
     
 </head>
 <body>
-    <header  class="header">
-        <div class="menu container">
-            <a href="#" class="logo">PhotoCop</a>
-            <input type="checkbox" id="menu" />
-            <label for="menu" class="hambuger">
-                <img src="img/logos.webp" class="menu-icono" alt="This a menu">
-                <i class="fas fa-bars"></i>
-            </label>
-            <nav class="navbar">
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#" onclick="redirect('inicio')">Inicio</a></li>
-                    <li><a href="#" onclick="redirect('nosotros')">Nosotros</a></li>
-                    <li><a href="#" onclick="redirect('servicios')">Servicios</a></li>
-                    <li><a href="#" onclick="redirect('contacto')">Contacto</a></li>
-                </ul>
-            </nav>
+
+<header class="header">
+    <div class="menu container">
+        <a href="#" class="logo">PhotoCop</a>
+
+    
+        <div class="cart">
+            <i class="fas fa-shopping-cart" onclick="showCart()"></i>
         </div>
 
+        <input type="checkbox" id="menu" />
+        <label for="menu" class="hambuger">
+            <img src="img/logos.webp" class="menu-icono" alt="This a menu">
+            <i class="fas fa-bars"></i>
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" onclick="redirect('inicio')">Inicio</a></li>
+                <li><a href="#" onclick="redirect('nosotros')">Nosotros</a></li>
+                <li><a href="#" onclick="redirect('servicios')">Servicios</a></li>
+                <li><a href="#" onclick="redirect('contacto')">Contacto</a></li>
+            </ul>
+        </nav>
+  <!-- Modal del carrito de compras -->
+        <div id="cartModal" class="cart-modal">
+            <div class="cart-modal-content">
+                <span class="close" onclick="closeCart()">&times;</span>
+                <h2>Carrito de Compras</h2>
+                <ul id="cartItems">
+                    <!-- Aquí se mostrarán los elementos del carrito -->
+                </ul>
+                <button onclick="checkout()">Checkout</button>
+            </div>
+        </div>
+            
+    
+    
+    </div>
         <div class="header-content container" id="inicio" class="section">
             <div class="header-txt">
                 <h1>Creatividad Foto Grafica</h1>
@@ -164,6 +183,9 @@
     </footer>
     </footer>
 
+
+
+    
     <?php
         include("api/send.php");
     ?>
