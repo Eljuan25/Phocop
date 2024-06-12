@@ -1,8 +1,5 @@
 
 
-function myFunction() {
-    window.localtion.hrwf="htpp://localhost/Phocop";
-}
 
 function redirectTopage() {
     window.location.href = 'fotoxv.php';
@@ -33,4 +30,11 @@ document.getElementById("sectionID").onclick = function () {
 function redirectEvent(){
     window.location.href = 'fotoevent.php'
 
+}
+
+
+function handleSubmit(event) {
+    event.preventDefault(); 
+    alert("Gracias por tu preferencia. Habrá alguien que se ponga de acuerdo contigo.");
+    document.getElementById('contactForm').submit(); // Enviar el formulario después de la alerta
 }

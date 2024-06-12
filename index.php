@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhotoCop</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  href="path/to/your/fontawesome/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
+    
 </head>
 <body>
     <header  class="header">
@@ -122,41 +123,29 @@
     </main>
 
 
-    <section class="formulario container" id="contacto" class="section">
-    
-        <form method="post" autocomplete="off">
-
+    <section class="formulario container" id="contacto">
+        <form method="post" autocomplete="off" id="contactForm" onsubmit="handleSubmit(event)">
             <h2>Agenda tu cita con nosotros</h2>
-
             <div class="input-grup">
-
                 <div class="input-container">
-                    <input type="text" name="name" placeholder="Nombre y Apelldio"> 
+                    <input type="text" name="name" placeholder="Nombre y Apellido" required>
                     <i class="fa-solid fa-user"></i>
                 </div>
-
                 <div class="input-container">
-                    <input type="tel" name="phone" placeholder="Telefono Celular"> 
+                    <input type="tel" name="phone" placeholder="Teléfono Celular" required>
                     <i class="fa-solid fa-phone"></i>
                 </div>
-                
-
                 <div class="input-container">
-                    <input type="email" name="email" placeholder="Correo"> 
+                    <input type="email" name="email" placeholder="Correo" required>
                     <i class="fa-solid fa-envelope"></i>
                 </div>
-
                 <div class="input-container">
-                    <textarea name="massage" placeholder="Detalles de la cita"></textarea>
+                    <textarea name="massage" placeholder="Detalles de la cita" required></textarea>
                 </div>
-
-                <input type="submit" name="send" class="btn" onclick="myFunction()">
-
+                <input type="submit" name="send" class="btn">
             </div>
-
         </form>
     </section>
-
     
     <footer class="footer">
         <div class="footer-content container">

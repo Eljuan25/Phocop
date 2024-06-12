@@ -181,6 +181,7 @@ img{
     padding:  25px;
     box-shadow: 0 0 20px rgb(0, 0, 0, 0 , 1);
     flex-basis: calc(25% - 20px);
+    cursor: pointer;
 }
 
 
