@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhotoCop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header  class="header">
@@ -17,18 +17,17 @@
                 <i class="fas fa-bars"></i>
             </label>
             <nav class="navbar">
+            <nav class="navbar">
                 <ul>
-
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Contacto</a></li>
-
+                    <li><a href="#" onclick="redirect('inicio')">Inicio</a></li>
+                    <li><a href="#" onclick="redirect('nosotros')">Nosotros</a></li>
+                    <li><a href="#" onclick="redirect('servicios')">Servicios</a></li>
+                    <li><a href="#" onclick="redirect('contacto')">Contacto</a></li>
                 </ul>
             </nav>
         </div>
 
-        <div class="header-content container">
+        <div class="header-content container" id="inicio" class="section">
             <div class="header-txt">
                 <h1>Creatividad Foto Grafica</h1>
                 <p>
@@ -59,7 +58,7 @@
         </div>
     </header>
 
-    <section class="about container">
+    <section class="about container"  >
         
         <div class="about-img">
             <br />
@@ -88,30 +87,30 @@
         </p>
     </section>
     
-    <main class="services">
+    <main class="services" id="servicios" class="section">
         <br />        
         <h2>Servicios</h2>
         <div class="services-content container">
             
             <div class = "services-1">
                 <i></i>
-                <i class="fa-solid fa-object-group"></i>
+                <i class="fa-solid fa-object-group" onclick="redirectTopagge()"></i>
                     <h3>Fotografia Artistica</h3>
             </div>
 
             <div class = "services-1">
                 <i></i>
-                <i class="fa-solid fa-object-group"></i>
+                <i class="fa-solid fa-object-group" onclick="redirectTope()"></i>
                     <h3>Fotografia de Bodas</h3>
             </div>
             
             <div class = "services-1">
                 <i></i>
-                <i class="fa-solid fa-object-group"></i>
-                    <h3>Fotografia de Vagabundos</h3>
+                <i class="fa-solid fa-object-group" onclick="redirectEvent()" ></i>
+                    <h3>Fotografia de Eventos</h3>
             </div>
 
-            <div class = "services-1">
+            <div class = "services-1" onclick="redirectTopage()">
                 <i></i>
                 <i class="fa-solid fa-object-group"></i>
                     <h3>Fotografia de XV</h3>
@@ -123,7 +122,7 @@
     </main>
 
 
-    <section class="formulario container">
+    <section class="formulario container" id="contacto" class="section">
     
         <form method="post" autocomplete="off">
 
@@ -166,10 +165,10 @@
             </div>
             <div class="links">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#" onclick="redirect('inicio')">Inicio</a></li>
+                    <li><a href="#" onclick="redirect('nosotros')">Nosotros</a></li>
+                    <li><a href="#" onclick="redirect('servicios')">Servicios</a></li>
+                    <li><a href="#" onclick="redirect('contacto')">Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -177,15 +176,11 @@
     </footer>
 
     <?php
-        include("send.php");
+        include("api/send.php");
     ?>
 
-    <script>
-        function myFunction() {
-            window.localtion.hrwf="htpp://localhost/Phocop";
-        }
-    </script>
-
+    
+    <script src="js/scripts.js"></script
 
 </body>
 </html>
