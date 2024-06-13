@@ -46,6 +46,7 @@
             <img src="img/logos.webp" class="menu-icono" alt="This a menu">
             <i class="fas fa-bars"></i>
         </label>
+       
         <div class="cart">
             <i class="fas fa-shopping-cart" onclick="showCart()"></i>
         </div>

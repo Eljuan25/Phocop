@@ -24,14 +24,16 @@
             <img src="img/logos.webp" class="menu-icono" alt="This a menu">
             <i class="fas fa-bars"></i>
         </label>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#" onclick="redirect('inicio')">Inicio</a></li>
-                <li><a href="#" onclick="redirect('nosotros')">Nosotros</a></li>
-                <li><a href="#" onclick="redirect('servicios')">Servicios</a></li>
-                <li><a href="#" onclick="redirect('contacto')">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="link">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" onclick="redirect('inicio')">Inicio</a></li>
+                    <li><a href="#" onclick="redirect('nosotros')">Nosotros</a></li>
+                    <li><a href="#" onclick="redirect('servicios')">Servicios</a></li>
+                    <li><a href="#" onclick="redirect('contacto')">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
   <!-- Modal del carrito de compras -->
         <div id="cartModal" class="cart-modal">
             <div class="cart-modal-content">
@@ -47,7 +49,7 @@
     
     
     </div>
-        <div class="header-content container" id="inicio" class="section">
+        <div class="header-content container" id="inicio" class="services">
             <div class="header-txt">
                 <h1>Creatividad Foto Grafica</h1>
                 <p>
@@ -58,6 +60,9 @@
                     y a transformar lo cotidiano en algo extraordinario.
 
                 </p>
+
+
+
                 <br />
                 <p>
 
@@ -74,7 +79,7 @@
             </div>
         </div>
         <div class="header-img">
-            <img src="img/model.jpg" alt="this información for nosotros" width="250" head="auto" >
+            <img src="img/model.jpg" alt="this información for nosotros" width="350" head="auto" >
         </div>
     </header>
 
@@ -105,6 +110,48 @@
             un tesoro personal, capaz de evocar memorias y emociones cada vez que se mire.
           
         </p>
+    </section>
+
+
+    <section clas = "about container">
+
+
+    <div class="about-text">
+        <br />
+        <h2>Hacerca de Nosotros</h2>   
+        <p>
+
+        Nuestro equipo está compuesto por fotógrafos apasionados y profesionales 
+        con años de experiencia en una amplia variedad de estilos y técnicas fotográficas. Ya sea que estés buscando retratos 
+        familiares, cobertura de eventos, sesiones de moda, fotografía de productos o imágenes artísticas, 
+        estamos aquí para transformar tus ideas en realidad visual
+
+        </p>
+
+
+    </div>
+ 
+       <br /> 
+    <div class = "nostro-img">
+        <img src="img/panoramic.jpg" alt = "description">
+    </div>
+
+
+        <div class="about-text">
+            <h2>¿Por qué elegir Photocop?</h2>
+        <br /> 
+
+        <ul>
+            <li>Calidad Superior: Utilizamos equipos de última generación y técnicas avanzadas para asegurar que cada fotografía sea impecable y memorable.</li>
+            <br /> 
+            <li>Creatividad y Originalidad: Nos esforzamos por ofrecer un enfoque fresco e innovador en cada sesión fotográfica, adaptándonos a tus necesidades y deseos.</li>
+            <br />
+            <li>Experiencia Personalizada: Entendemos que cada cliente es único, por lo que personalizamos nuestros servicios para reflejar tu estilo y personalidad.</li>
+            <br />
+            <li>Compromiso y Profesionalismo: Desde la planificación hasta la entrega final, nuestro compromiso es brindarte una experiencia profesional y sin contratiempos.</li>
+        </ul>
+        </div>
+
     </section>
     
     <main class="services" id="servicios" class="section">
