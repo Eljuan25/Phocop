@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<header class="header">
+    <header class="header">
     <div class="menu container">
         <a href="#" class="logo">PhotoCop</a>
 
@@ -51,7 +51,7 @@
     </div>
         <div class="header-content container" id="inicio" class="services">
             <div class="header-txt">
-                <h1>Creatividad Foto Grafica</h1>
+                <h1>Creatividad FotoGrafica</h1>
                 <p>
                     En PhotoCop, creemos firmemente que cada imagen tiene el poder de contar una historia única y emotiva. Para nosotros, 
                     la fotografía no es solo una técnica, sino una forma de arte que permite capturar 
@@ -117,18 +117,27 @@
 
 
     <div class="about-text">
-        <br />
+            <br />
         <h2>Hacerca de Nosotros</h2>   
         <p>
-
         Nuestro equipo está compuesto por fotógrafos apasionados y profesionales 
         con años de experiencia en una amplia variedad de estilos y técnicas fotográficas. Ya sea que estés buscando retratos 
         familiares, cobertura de eventos, sesiones de moda, fotografía de productos o imágenes artísticas, 
-        estamos aquí para transformar tus ideas en realidad visual
-
+        estamos aquí para transformar tus ideas en realidad visual.
         </p>
+        <br />
+        <p>
+        <i>Además, nos destacamos en la meticulosa fotografía de productos, donde cada detalle 
+        cuenta para transmitir la calidad y el atractivo de tus productos. 
+        También exploramos el ámbito de las imágenes artísticas, buscando siempre nuevas formas 
+        de expresión visual que impacten y emocionen.</i>
 
-
+        <i>Nos enorgullece transformar tus ideas en realidades visuales memorables. 
+        Con un enfoque creativo y un compromiso inquebrantable con la excelencia, 
+        nos aseguramos de superar tus expectativas en cada proyecto. 
+        Estamos aquí para capturar la esencia de tu visión y convertirla en imágenes que perduren en el tiempo, 
+        reflejando la calidad y la pasión que nos define como fotógrafos.</i>
+       </p>
     </div>
  
        <br /> 
@@ -231,14 +240,11 @@
     </footer>
 
 
-
+<script src="js/scripts.js"></script>
     
     <?php
         include("api/send.php");
     ?>
-
-    
-    <script src="js/scripts.js"></script
 
 </body>
 </html>

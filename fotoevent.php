@@ -85,7 +85,7 @@ $section = isset($_GET['section']) ? $_GET['section'] : 'inicio';
 
     <section class="about container">
         <div class="about-img">
-            <img src="img/event.jpg" alt="stilye">
+            <img src="img/event.jpg" alt="stilye" width="550px" height="auto">
         </div>
         <div class="about-txt">
             <h2>Fotos de Eventos</h2>

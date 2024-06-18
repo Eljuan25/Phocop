@@ -99,7 +99,7 @@ $section = isset($_GET['section']) ? $_GET['section'] : 'inicio';
             </div>
         </div>
         <div class="header-img">
-            <img src="img/xv1.jpg" alt="this información for nosotros" width="500" height="auto">
+            <img src="img/xv1.jpg" alt="this información for nosotros" width="550" height="auto">
         </div>
     </div>
 
