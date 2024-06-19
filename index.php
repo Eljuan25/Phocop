@@ -40,9 +40,13 @@
                 <span class="close" onclick="closeCart()">&times;</span>
                 <h2>Carrito de Compras</h2>
                 <ul id="cartItems">
-                    <!-- Aquí se mostrarán los elementos del carrito -->
+
+                    <i>Fotos de Bodas 500$</i><br />
+                    <i>Fotos Artisticas 600$</i><br />
+                    <i>Fotos de Eventos 700$</i><br />
+                    <i>Fotos de XV  900$</i><br >
                 </ul>
-                <button onclick="checkout()">Checkout</button>
+                <button onclick="checkout()" >Checar</button>
             </div>
         </div>
             
@@ -214,6 +218,12 @@
                     <input type="email" name="email" placeholder="Correo" required>
                     <i class="fa-solid fa-envelope"></i>
                 </div>
+
+                <div class="input-container">
+                    <input type="day" name="day" placeholder="Dia y Hora" required>
+                    <i class="fa-solid fa-certificate"></i>
+                </div>
+
                 <div class="input-container">
                     <textarea name="massage" placeholder="Detalles de la cita" required></textarea>
                 </div>
@@ -240,7 +250,7 @@
     </footer>
 
 
-<script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
     
     <?php
         include("api/send.php");

@@ -7,6 +7,10 @@ function redirectTopage() {
 
 }
 
+function checkout() {
+    window.location.href = 'fotoevent.php';
+}
+
 
 function redirectTope() {
     window.location.href = 'fotoboda.php';

@@ -60,8 +60,7 @@ $section = isset($_GET['section']) ? $_GET['section'] : 'inicio';
 
 <section id="inicio" class="section" style="display: <?php echo $section == 'inicio' ? 'block' : 'none'; ?>;">
     <div class="header-content container">
-        <div class="header-txt">
-          
+        <div class="header-txt">          
             <br />
             <h2>Sesión en Exterior</h2>
             <br />

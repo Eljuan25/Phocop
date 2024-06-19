@@ -1,4 +1,4 @@
 <?php
-    $conex =mysqli_connect("localhost", "root", "","formulario");
+    $conex =mysqli_connect("localhost", "root", "root","formulario");
 ?>
 
