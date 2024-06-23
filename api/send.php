@@ -1,6 +1,6 @@
 <?php
 
-include("api/conexion.php");
+include 'conexion.php';
 
 if(isset($_POST['send'])){
     $name = mysqli_real_escape_string($conex, $_POST['name']);
